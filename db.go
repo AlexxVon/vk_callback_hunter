@@ -15,8 +15,8 @@ import (
 )
 
 func dbOpen() *sql.DB {
-	db, err := sql.Open("sqlite3", "/data/game.db") //для Amvery
-	// db, err := sql.Open("sqlite3", "game.db")
+	//db, err := sql.Open("sqlite3", "/data/game.db") //для Amvery
+	db, err := sql.Open("sqlite3", "game.db")
 
 	if err != nil {
 		panic(err)
